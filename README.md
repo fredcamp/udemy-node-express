@@ -11,3 +11,4 @@ Compilation of output and guide notes when studying the course
     - Live Demo: [link](https://rickalburo-jobs-api.herokuapp.com/)
 - [Jobster App](/06.5-jobster-app)
     - Live Demo: [link](https://rickalburo-jobster-app.herokuapp.com/landing)
+- [File Upload](/07-file-upload)
