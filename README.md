@@ -1,6 +1,6 @@
 # Udemy NodeJS, Express and MongoDB
 
-Compilation of output and guide notes when studying the course
+Compilation of output and guide notes when studying the course. Course [link](https://www.udemy.com/course/nodejs-tutorial-and-projects-course/)
 
 ## Topics
 - [Express Routing](/nodejs-express-routing)
