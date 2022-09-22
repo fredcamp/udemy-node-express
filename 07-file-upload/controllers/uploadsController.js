@@ -27,6 +27,14 @@ const uploadProductImgLocal = async (req, res) => {
 };
 
 const uploadProductImg = async (req, res) => {
+  if (!req.files) throw new CustomError.BadRequestError("Please provide file");
+
+  if (!req.files.image.mimetype.startsWith("image"))
+    throw new CustomError.BadRequestError("Please provide image");
+    
+  if (req.files.image.size > Number(process.env.IMG_MAX_SIZE))
+    throw new CustomError.BadRequestError("Image should not exceed 2MB");
+
   const product = await cloudinary.uploader.upload(
     req.files.image.tempFilePath,
     {
