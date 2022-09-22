@@ -13,3 +13,4 @@ Compilation of output and guide notes when studying the course. Course [link](ht
     - Live Demo: [link](https://rickalburo-jobster-app.herokuapp.com/landing)
 - [File Upload](/07-file-upload)
 - [Send Email](/08-send-email)
+- [Stripe Payment](/09-stripe-payment)
