@@ -4,7 +4,6 @@ require('express-async-errors')
 const express = require('express')
 const app = express()
 
-const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const fileUpload = require('express-fileupload')
 
@@ -40,7 +39,6 @@ app.use(xss())
 app.use(mongoSanitize())
 
 app.use(express.static('./public'))
-app.use(morgan('tiny'))
 app.use(express.json())
 // app.use(fileUpload({ useTempFiles: true }))
 app.use(fileUpload())
