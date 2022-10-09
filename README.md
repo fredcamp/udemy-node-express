@@ -17,3 +17,4 @@ Compilation of output and guide notes when studying the course. Course [link](ht
 - [Stripe Payment](/09-stripe-payment)
 - [E-Commerce API](/10-e-commerce)
   - Live Demo: [link](https://rickalburo-e-commerce.herokuapp.com/)
+- [Authentication Workflow](/11-auth-workflow)
