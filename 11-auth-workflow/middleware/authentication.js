@@ -8,11 +8,15 @@ const authenticateUser = async (req, res, next) => {
   try {
     if (accessToken) {
       const payload = isTokenValid(accessToken)
+      console.log('accessToken: ', payload)
+
       req.user = payload.user
       return next()
     }
 
     const payload = isTokenValid(refreshToken)
+    console.log('refreshToken:', payload)
+
     const existingToken = await Token.findOne({
       refreshToken: payload.refreshToken,
       user: payload.user.userId,

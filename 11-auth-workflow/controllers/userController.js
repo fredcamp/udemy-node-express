@@ -39,7 +39,10 @@ const updateUser = async (req, res) => {
   await user.save()
 
   const tokenUser = createTokenUser(user)
-  attachCookiesToResponse({ res, user: tokenUser })
+  attachCookiesToResponse({
+    res,
+    user: tokenUser,
+  })
   res.status(StatusCodes.OK).json({ user: tokenUser })
 }
 const updateUserPassword = async (req, res) => {

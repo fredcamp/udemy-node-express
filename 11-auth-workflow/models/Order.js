@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const SingleOrderItemSchema = mongoose.Schema({
   name: { type: String, required: true },
@@ -10,7 +10,7 @@ const SingleOrderItemSchema = mongoose.Schema({
     ref: 'Product',
     required: true,
   },
-});
+})
 
 const OrderSchema = mongoose.Schema(
   {
@@ -50,6 +50,6 @@ const OrderSchema = mongoose.Schema(
     },
   },
   { timestamps: true }
-);
+)
 
-module.exports = mongoose.model('Order', OrderSchema);
+module.exports = mongoose.model('Order', OrderSchema)
